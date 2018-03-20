@@ -1,0 +1,17 @@
+#N canvas 581 287 275 272 10;
+#X obj 17 206 dac~;
+#X obj 17 15 loadbang;
+#X obj 17 42 metro 200;
+#X obj 17 70 random 20;
+#X obj 17 124 mtof;
+#X obj 17 151 osc~;
+#X obj 17 97 + 50;
+#X obj 17 178 *~ 0.5;
+#X connect 1 0 2 0;
+#X connect 2 0 3 0;
+#X connect 3 0 6 0;
+#X connect 4 0 5 0;
+#X connect 5 0 7 0;
+#X connect 6 0 4 0;
+#X connect 7 0 0 0;
+#X connect 7 0 0 1;
